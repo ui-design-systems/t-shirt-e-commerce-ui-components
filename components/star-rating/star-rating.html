@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - Images Swiper</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            light: '#ffebee', // Very light red
+                            DEFAULT: '#ff8a80', // Light red
+                            dark: '#ff5252', // Medium red
+                        },
+                    },
+                },
+            },
+        }
+    </script>
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .size-option:checked + label {
+            border-color: #ff8a80;
+            border-width: 2px;
+        }
+    </style>
+</head>
+<body class="font-sans">
+<!-- Star Rating -->
+<div class="flex items-center">
+    <div class="flex items-center mr-2">
+        <div class="rating flex space-x-1">
+            <span class="star cursor-pointer text-yellow-400" data-value="1">★</span>
+            <span class="star cursor-pointer text-yellow-400" data-value="2">★</span>
+            <span class="star cursor-pointer text-yellow-400" data-value="3">★</span>
+            <span class="star cursor-pointer text-yellow-400" data-value="4">★</span>
+            <span class="star cursor-pointer text-gray-300" data-value="5">★</span>
+        </div>
+    </div>
+    <span class="text-gray-500"><span id="rating-count">36</span> reviews</span>
+</div>
+<script src="./star-rating.js"></script>
+</body>
+</html> 

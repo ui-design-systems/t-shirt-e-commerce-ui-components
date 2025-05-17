@@ -1,0 +1,28 @@
+            // Make address cards selectable
+            const addressCards = document.querySelectorAll('.address-card');
+            addressCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    // Deselect all cards
+                    addressCards.forEach(c => c.classList.remove('selected'));
+                    
+                    // Select clicked card
+                    this.classList.add('selected');
+                    
+                    // Find the radio button inside this card and select it
+                    const radioId = this.dataset.address;
+                    document.getElementById(radioId).checked = true;
+                });
+            });
+            
+            // New address form toggle
+            const newAddressToggle = document.getElementById('new-address-toggle');
+            const newAddressForm = document.getElementById('new-address-form');
+            const cancelNewAddress = document.getElementById('cancel-new-address');
+            
+            newAddressToggle.addEventListener('click', function() {
+                newAddressForm.classList.toggle('hidden');
+            });
+            
+            cancelNewAddress.addEventListener('click', function() {
+                newAddressForm.classList.add('hidden');
+            });

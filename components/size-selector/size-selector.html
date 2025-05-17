@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - Images Swiper</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            light: '#ffebee', // Very light red
+                            DEFAULT: '#ff8a80', // Light red
+                            dark: '#ff5252', // Medium red
+                        },
+                    },
+                },
+            },
+        }
+    </script>
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .size-option:checked + label {
+            border-color: #ff8a80;
+            border-width: 2px;
+        }
+    </style>
+</head>
+<body class="font-sans m-2">
+    <div>
+        <h3 class="text-lg font-semibold mb-3">Select Size</h3>
+        <div class="flex space-x-4">
+            <div>
+                <input type="radio" id="size-xs" name="size" value="XS" class="sr-only size-option">
+                <label for="size-xs" class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-gray-300 cursor-pointer hover:border-primary">
+                    <span>XS</span>
+                </label>
+            </div>
+            <div>
+                <input type="radio" id="size-s" name="size" value="S" class="sr-only size-option">
+                <label for="size-s" class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-gray-300 cursor-pointer hover:border-primary">
+                    <span>S</span>
+                </label>
+            </div>
+            <div>
+                <input type="radio" id="size-m" name="size" value="M" class="sr-only size-option" checked>
+                <label for="size-m" class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-primary cursor-pointer hover:border-primary">
+                    <span>M</span>
+                </label>
+            </div>
+            <div>
+                <input type="radio" id="size-l" name="size" value="L" class="sr-only size-option">
+                <label for="size-l" class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-gray-300 cursor-pointer hover:border-primary">
+                    <span>L</span>
+                </label>
+            </div>
+            <div>
+                <input type="radio" id="size-xl" name="size" value="XL" class="sr-only size-option">
+                <label for="size-xl" class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-gray-300 cursor-pointer hover:border-primary">
+                    <span>XL</span>
+                </label>
+            </div>
+        </div>
+    </div>
+<script src="./size-selector.js"></script>
+</body>
+</html> 
+
+                      <!-- Size Selection -->

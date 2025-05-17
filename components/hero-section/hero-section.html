@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="./swiper.css">
+</head>
+<body>
+    <!-- Hero Section with Swiper -->
+    <section id="hero" class="pt-16">
+        <div class="swiper heroSwiper h-[80vh]">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 - Image on Left, Text on Right -->
+                <div class="swiper-slide relative bg-gray-100 transition-all duration-300">
+                    <div class="flex flex-col md:flex-row h-full">
+                        <!-- Image Side -->
+                        <div class="md:w-1/2 h-full">
+                            <div class="h-full w-full bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1562157873-818bc0726f68?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1274&q=80');"></div>
+                        </div>
+                        <!-- Content Side -->
+                        <div class="md:w-1/2 flex items-center justify-center p-6 md:p-12">
+                            <div class="text-center md:text-left">
+                                <h1 class="text-3xl md:text-5xl font-bold mb-4 text-gray-800">Summer Collection</h1>
+                                <p class="text-lg md:text-xl mb-8 text-gray-600">Up to 50% off on selected items</p>
+                                <a href="#categories" class="bg-red-500 hover:opacity-90 text-white font-bold py-3 px-8 rounded-full inline-block transition">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 2 - Image on Right, Text on Left -->
+                <div class="swiper-slide relative bg-gray-100 transition-all duration-300">
+                    <div class="flex flex-col-reverse md:flex-row h-full">
+                        <!-- Content Side -->
+                        <div class="md:w-1/2 flex items-center justify-center p-6 md:p-12">
+                            <div class="text-center md:text-left">
+                                <h1 class="text-3xl md:text-5xl font-bold mb-4 text-gray-800">New Arrivals</h1>
+                                <p class="text-lg md:text-xl mb-8 text-gray-600">Check out our latest designs</p>
+                                <a href="#new-fashions" class="bg-red-500 hover:opacity-90 text-white font-bold py-3 px-8 rounded-full inline-block transition">Shop Now</a>
+                            </div>
+                        </div>
+                        <!-- Image Side -->
+                        <div class="md:w-1/2 h-full">
+                            <div class="h-full w-full bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 3 - Image on Left, Text on Right -->
+                <div class="swiper-slide relative bg-gray-100 transition-all duration-300">
+                    <div class="flex flex-col md:flex-row h-full">
+                        <!-- Image Side -->
+                        <div class="md:w-1/2 h-full">
+                            <div class="h-full w-full bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80');"></div>
+                        </div>
+                        <!-- Content Side -->
+                        <div class="md:w-1/2 flex items-center justify-center p-6 md:p-12">
+                            <div class="text-center md:text-left">
+                                <h1 class="text-3xl md:text-5xl font-bold mb-4 text-gray-800">Sports Collection</h1>
+                                <p class="text-lg md:text-xl mb-8 text-gray-600">Perfect for your active lifestyle</p>
+                                <a href="#sports" class="bg-red-500 hover:opacity-90 text-white font-bold py-3 px-8 rounded-full inline-block transition">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next text-primary"></div>
+            <div class="swiper-button-prev text-primary"></div>
+        </div>
+    </section>
+    <script src="./swiper.js"></script>
+</body>
+</html>

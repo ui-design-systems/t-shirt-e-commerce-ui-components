@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            light: '#ffebee', // Very light red
+                            DEFAULT: '#ff8a80', // Light red
+                            dark: '#ff5252', // Medium red
+                        },
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="m-2">
+    <h3 class="text-center text-2xl font-bold my-3">Stepper Item</h3>
+    <div class="flex justify-center mb-8">
+        <div class="flex items-center w-full max-w-3xl">
+            <div class="flex-1 text-center">
+                <div class="w-10 h-10 mx-auto rounded-full bg-primary text-white flex items-center justify-center">1</div>
+                <span class="text-sm mt-2">Cart</span>
+            </div>
+            <div class="h-1 flex-1 bg-primary"></div>
+            <div class="flex-1 text-center">
+                <div class="w-10 h-10 mx-auto rounded-full bg-primary text-white flex items-center justify-center">2</div>
+                <span class="text-sm mt-2">Checkout</span>
+            </div>
+            <div class="h-1 flex-1 bg-gray-300"></div>
+            <div class="flex-1 text-center">
+                <div class="w-10 h-10 mx-auto rounded-full bg-gray-300 text-gray-600 flex items-center justify-center">3</div>
+                <span class="text-sm mt-2">Confirmation</span>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

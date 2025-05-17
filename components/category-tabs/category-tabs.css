@@ -1,0 +1,16 @@
+/* Category tabs styling */
+.category-tab {
+    position: relative;
+    color: #6B7280;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.category-tab:hover {
+    color: #ff8a80;
+}
+
+.category-tab.active {
+    color: #ff8a80;
+    border-bottom: 2px solid #ff8a80;
+}

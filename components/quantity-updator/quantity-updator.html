@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantity Updator</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            light: '#ffebee', // Very light red
+                            DEFAULT: '#ff8a80', // Light red
+                            dark: '#ff5252', // Medium red
+                        },
+                    },
+                },
+            },
+        }
+    </script>
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .size-option:checked + label {
+            border-color: #ff8a80;
+            border-width: 2px;
+        }
+    </style>
+</head>
+<body class="font-sans m-2">
+    <div>
+        <h3 class="text-lg font-semibold mb-3">Quantity Updator</h3>
+         <!-- Quantity -->
+         <div>
+            <h3 class="text-lg font-semibold mb-2">Quantity</h3>
+            <div class="flex items-center border border-gray-300 rounded-md w-32">
+                <button class="px-3 py-1 text-lg">-</button>
+                <input type="number" min="1" value="1" class="w-full text-center border-none focus:outline-none">
+                <button class="px-3 py-1 text-lg">+</button>
+            </div>
+        </div>
+        
+    </div>
+<script src="./quantity-updator.js"></script>
+</body>
+</html> 
+
+                      <!-- Size Selection -->

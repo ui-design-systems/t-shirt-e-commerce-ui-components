@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - Images Swiper</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            light: '#ffebee', // Very light red
+                            DEFAULT: '#ff8a80', // Light red
+                            dark: '#ff5252', // Medium red
+                        },
+                    },
+                },
+            },
+        }
+    </script>
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .size-option:checked + label {
+            border-color: #ff8a80;
+            border-width: 2px;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Product images Section -->
+    <div class="md:w-1/3 mb-8 md:mb-0">
+        <div class="swiper productSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" 
+                         alt="Product Image 1" 
+                         class="w-full h-auto rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1583744946564-b52d01e7f0e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" 
+                         alt="Product Image 2" 
+                         class="w-full h-auto rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1596609548086-85bbf8ddb6b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" 
+                         alt="Product Image 3" 
+                         class="w-full h-auto rounded-lg">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next text-primary"></div>
+            <div class="swiper-button-prev text-primary"></div>
+        </div>
+        <!-- Thumbnails -->
+        <div class="mt-4 grid grid-cols-3 gap-2">
+            <div>
+                <img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" 
+                     alt="Thumbnail 1" 
+                     class="w-full h-24 object-cover rounded-md cursor-pointer border-2 border-transparent hover:border-primary">
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1583744946564-b52d01e7f0e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" 
+                     alt="Thumbnail 2" 
+                     class="w-full h-24 object-cover rounded-md cursor-pointer border-2 border-transparent hover:border-primary">
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1596609548086-85bbf8ddb6b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" 
+                     alt="Thumbnail 3" 
+                     class="w-full h-24 object-cover rounded-md cursor-pointer border-2 border-transparent hover:border-primary">
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    <script>
+        // Initialize Swiper for Product Images
+        document.addEventListener('DOMContentLoaded', function() {
+            var productSwiper = new Swiper('.productSwiper', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+            
+            // Thumbnail click handling
+            const thumbnails = document.querySelectorAll('.mt-4 img');
+            thumbnails.forEach((thumb, index) => {
+                thumb.addEventListener('click', () => {
+                    productSwiper.slideTo(index + 1);
+                    
+                    // Update borders
+                    thumbnails.forEach(t => t.classList.replace('border-primary', 'border-transparent'));
+                    thumb.classList.replace('border-transparent', 'border-primary');
+                });
+            });
+            
+        });
+    </script>
+</body>
+</html> 

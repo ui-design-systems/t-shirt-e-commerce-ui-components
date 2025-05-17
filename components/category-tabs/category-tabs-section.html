@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./animation.css">
+    <link rel="stylesheet" href="./category-tabs.css">
+</head>
+<body>
+    <!-- Categories Section with Tabs -->
+    <section id="categories" class="py-16 bg-primary-light bg-opacity-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Shop by Category</h2>
+            
+            <!-- Tab Navigation -->
+            <div class="flex justify-center mb-8 overflow-x-auto">
+                <div class="inline-flex border-b border-gray-200">
+                    <button class="category-tab active px-6 py-3 font-medium text-sm focus:outline-none" data-tab="men">Men</button>
+                    <button class="category-tab px-6 py-3 font-medium text-sm focus:outline-none" data-tab="women">Women</button>
+                    <button class="category-tab px-6 py-3 font-medium text-sm focus:outline-none" data-tab="kids">Kids</button>
+                    <button class="category-tab px-6 py-3 font-medium text-sm focus:outline-none" data-tab="unisex">Unisex</button>
+                </div>
+            </div>
+            
+            <!-- Tab Content -->
+            <div class="tab-content">
+                <!-- Men's Tab -->
+                <div id="men-tab" class="tab-pane active">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <!-- Product Card 1 -->
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                            <div class="h-64 overflow-hidden">
+                                <a href="product.html">
+                                    <img src="https://images.unsplash.com/photo-1527719327859-c6ce80353573?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80" alt="Men's T-Shirt" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                                </a>
+                            </div>
+                            <div class="p-4">
+                                <a href="product.html" class="hover:text-primary">
+                                    <h3 class="text-lg font-semibold mb-2">Classic Cotton Tee</h3>
+                                </a>
+                                <p class="text-gray-600 mb-2">Comfortable everyday wear</p>
+                                <div class="flex justify-between items-center mb-4">
+                                    <span class="text-xl font-bold text-primary">$24.99</span>
+                                    <div class="flex space-x-1">
+                                        <span class="text-yellow-400">★★★★</span><span class="text-gray-300">★</span>
+                                    </div>
+                                </div>
+                                <div class="flex space-x-2">
+                                    <button class="flex-1 bg-red-500 hover:opacity-90 text-white py-2 rounded-md transition">Buy Now</button>
+                                    <button class="flex-1 border border-primary text-primary hover:bg-primary hover:text-white py-2 rounded-md transition">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Product Card 2 -->
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                            <div class="h-64 overflow-hidden">
+                                <a href="product.html">
+                                    <img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Men's Graphic Tee" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                                </a>
+                            </div>
+                            <div class="p-4">
+                                <a href="product.html" class="hover:text-primary">
+                                    <h3 class="text-lg font-semibold mb-2">Graphic Print Tee</h3>
+                                </a>
+                                <p class="text-gray-600 mb-2">Urban street style</p>
+                                <div class="flex justify-between items-center mb-4">
+                                    <span class="text-xl font-bold text-primary">$29.99</span>
+                                    <div class="flex space-x-1">
+                                        <span class="text-yellow-400">★★★★★</span>
+                                    </div>
+                                </div>
+                                <div class="flex space-x-2">
+                                    <button class="flex-1 bg-red-500 hover:opacity-90 text-white py-2 rounded-md transition">Buy Now</button>
+                                    <button class="flex-1 border border-primary text-primary hover:bg-primary hover:text-white py-2 rounded-md transition">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Product Card 3 -->
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                            <div class="h-64 overflow-hidden">
+                                <a href="product.html">
+                                    <img src="https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=691&q=80" alt="Men's Striped Tee" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                                </a>
+                            </div>
+                            <div class="p-4">
+                                <a href="product.html" class="hover:text-primary">
+                                    <h3 class="text-lg font-semibold mb-2">Striped Sailor Tee</h3>
+                                </a>
+                                <p class="text-gray-600 mb-2">Classic nautical design</p>
+                                <div class="flex justify-between items-center mb-4">
+                                    <span class="text-xl font-bold text-primary">$27.99</span>
+                                    <div class="flex space-x-1">
+                                        <span class="text-yellow-400">★★★★</span><span class="text-gray-300">★</span>
+                                    </div>
+                                </div>
+                                <div class="flex space-x-2">
+                                    <button class="flex-1 bg-red-500 hover:opacity-90 text-white py-2 rounded-md transition">Buy Now</button>
+                                    <button class="flex-1 border border-primary text-primary hover:bg-primary hover:text-white py-2 rounded-md transition">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Product Card 4 -->
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                            <div class="h-64 overflow-hidden">
+                                <a href="product.html">
+                                    <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80" alt="Men's Raglan Tee" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                                </a>
+                            </div>
+                            <div class="p-4">
+                                <a href="product.html" class="hover:text-primary">
+                                    <h3 class="text-lg font-semibold mb-2">Vintage Raglan Tee</h3>
+                                </a>
+                                <p class="text-gray-600 mb-2">Casual retro style</p>
+                                <div class="flex justify-between items-center mb-4">
+                                    <span class="text-xl font-bold text-primary">$32.99</span>
+                                    <div class="flex space-x-1">
+                                        <span class="text-yellow-400">★★★★★</span>
+                                    </div>
+                                </div>
+                                <div class="flex space-x-2">
+                                    <button class="flex-1 bg-red-500 hover:opacity-90 text-white py-2 rounded-md transition">Buy Now</button>
+                                    <button class="flex-1 border border-primary text-primary hover:bg-primary hover:text-white py-2 rounded-md transition">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Women's Tab (Hidden by default) -->
+                <div id="women-tab" class="tab-pane hidden">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <!-- Women's Product Cards -->
+                        <!-- Product Card 1 -->
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                            <div class="h-64 overflow-hidden">
+                                <a href="product.html">
+                                    <img src="https://images.unsplash.com/photo-1554568218-0f1715e72254?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Women's T-Shirt" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                                </a>
+                            </div>
+                            <div class="p-4">
+                                <a href="product.html" class="hover:text-primary">
+                                    <h3 class="text-lg font-semibold mb-2">Fitted V-Neck Tee</h3>
+                                </a>
+                                <p class="text-gray-600 mb-2">Soft premium fabric</p>
+                                <div class="flex justify-between items-center mb-4">
+                                    <span class="text-xl font-bold text-primary">$26.99</span>
+                                    <div class="flex space-x-1">
+                                        <span class="text-yellow-400">★★★★★</span>
+                                    </div>
+                                </div>
+                                <div class="flex space-x-2">
+                                    <button class="flex-1 bg-red-500 hover:opacity-90 text-white py-2 rounded-md transition">Buy Now</button>
+                                    <button class="flex-1 border border-primary text-primary hover:bg-primary hover:text-white py-2 rounded-md transition">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Additional Women's product cards would go here -->
+                    </div>
+                </div>
+                
+                <!-- Kids Tab (Hidden by default) -->
+                <div id="kids-tab" class="tab-pane hidden">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <!-- Kids Product Cards -->
+                        <!-- Product Card 1 -->
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                            <div class="h-64 overflow-hidden">
+                                <a href="product.html">
+                                    <img src="https://images.unsplash.com/photo-1519238359922-989348752efb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Kids T-Shirt" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                                </a>
+                            </div>
+                            <div class="p-4">
+                                <a href="product.html" class="hover:text-primary">
+                                    <h3 class="text-lg font-semibold mb-2">Fun Graphic Kids Tee</h3>
+                                </a>
+                                <p class="text-gray-600 mb-2">Playful designs for kids</p>
+                                <div class="flex justify-between items-center mb-4">
+                                    <span class="text-xl font-bold text-primary">$19.99</span>
+                                    <div class="flex space-x-1">
+                                        <span class="text-yellow-400">★★★★</span><span class="text-gray-300">★</span>
+                                    </div>
+                                </div>
+                                <div class="flex space-x-2">
+                                    <button class="flex-1 bg-red-500 hover:opacity-90 text-white py-2 rounded-md transition">Buy Now</button>
+                                    <button class="flex-1 border border-primary text-primary hover:bg-primary hover:text-white py-2 rounded-md transition">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Additional Kids product cards would go here -->
+                    </div>
+                </div>
+                
+                <!-- Unisex Tab (Hidden by default) -->
+                <div id="unisex-tab" class="tab-pane hidden">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <!-- Unisex Product Cards -->
+                        <!-- Product Card 1 -->
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                            <div class="h-64 overflow-hidden">
+                                <a href="product.html">
+                                    <img src="https://images.unsplash.com/photo-1503341504253-dff4815485f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Unisex T-Shirt" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                                </a>
+                            </div>
+                            <div class="p-4">
+                                <a href="product.html" class="hover:text-primary">
+                                    <h3 class="text-lg font-semibold mb-2">Unisex Crew Neck Tee</h3>
+                                </a>
+                                <p class="text-gray-600 mb-2">Gender-neutral design</p>
+                                <div class="flex justify-between items-center mb-4">
+                                    <span class="text-xl font-bold text-primary">$25.99</span>
+                                    <div class="flex space-x-1">
+                                        <span class="text-yellow-400">★★★★★</span>
+                                    </div>
+                                </div>
+                                <div class="flex space-x-2">
+                                    <button class="flex-1 bg-red-500 hover:opacity-90 text-white py-2 rounded-md transition">Buy Now</button>
+                                    <button class="flex-1 border border-primary text-primary hover:bg-primary hover:text-white py-2 rounded-md transition">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Additional Unisex product cards would go here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./category-tabs.js"></script>
+</body>
+</html>

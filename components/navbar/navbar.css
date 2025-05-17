@@ -1,0 +1,8 @@
+/* Mobile menu styles */
+.mobile-menu {
+    animation: slideDown 0.3s ease-out forwards;
+}
+
+.mobile-menu.hidden {
+    display: none;
+}
