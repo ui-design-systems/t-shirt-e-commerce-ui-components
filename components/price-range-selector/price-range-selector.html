@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Range Slider</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./price-range-selector.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="w-full max-w-md px-6 range-slider">
+        <div class="relative h-12">
+            <!-- Track background -->
+            <div class="absolute top-1/2 transform -translate-y-1/2 w-full h-1 bg-gray-300 rounded"></div>
+            <!-- Track progress -->
+            <div id="progress" class="absolute top-1/2 transform -translate-y-1/2 h-1 bg-black rounded"></div>
+
+            <!-- Range inputs -->
+            <input
+                type="range"
+                id="minRange"
+                min="0"
+                max="500"
+                step="1"
+                value="50"
+            />
+            <input
+                type="range"
+                id="maxRange"
+                min="0"
+                max="500"
+                step="1"
+                value="200"
+            />
+        </div>
+        <div class="flex justify-between mt-4 text-lg font-medium">
+            <span id="minValue">$50</span>
+            <span id="maxValue">$200</span>
+        </div>
+    </div>
+
+<script src="./price-range-selector.js"></script>
+</body>
+</html>

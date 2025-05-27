@@ -1,0 +1,70 @@
+
+
+1. T Shirt - Ecommerce
+2. Daily Crosswords
+3. Musician Portfolio
+4. Dashboard for Creating Plans on a day
+4. Film Rating App
+
+1. T shirt e commerce
+
+Landing page
+
+navbar showing logo and links
+hero section with swiper
+categories selection tabs
+products listing
+- new fashions
+- sports wears
+- contemporary designs
+
+Product page
+
+need to show a slider containing product image on left. on the right need to ad product info - title, size, price, description and the bottom of it need buttons - buy now and add to cart
+
+need to add other section below
+
+similar items
+arrange cards contains product image, price, info , buy now button, add to cart button 
+
+footer with links , social links
+
+tech stack: HTML, css, JavaScript , tailwind
+
+prompt 1: 
+create a landing page for a t shirts ecommerce website using html, css, javascript and tailwind css. it need to contain a navbar on top which contains a logo on left and links on right side. links need to be directed to corresponding sections. hero section need to contain  a swiper. each slide on swiper need to contain an image as background and text containing details about the offers and others, at the bottom it needed a button shop now to direct to corresponding section. On the next section need to add category links arranged horizontally on clicking it need to show items based on category. make this as tabs. on each category section it needs card items showing details about the product. card need to contain an image , title of the product price, info, buy now and add to cart button. for now add placeholder image from unsplash.com. on next section need to add a heading "New Fashions" -  below that it needs card items showing details about the product. card need to contain an image , title of the product price, info, buy now and add to cart button.  On the next section add title "Sports Wears" , below that add product cards similar to new fashions section. On the next section add a heading "Contemporary Designs" . below that add product cards similar to new fashions section. Footer Section Need to Contain Logo and Address on left. Arrange section vise links horizontally. Add social media links on right . Add a copyright message on bottom
+
+Prompt 2 : add footer section as mentioned above
+
+prompt 3 : on the hero section slides add an image on left and right sides alternatively on different slides , and also arrange the text and shop now section on the other side
+
+Propmt 4 : on the hero section. on slides keep th background image. add a new image place insid a rectangle, place that image on left and right sides alternatively on different slides , and also arrange the text and shop now section on the other side. change the hero section by this way. make it as an other html file by replicating the same and name the file as "index-design2"
+
+Prompt 5 ( color theme change): make theme based on a variation of red. make the primary color as a  light variation of red and change other colors also based on the primary color
+
+prompt 6 ( button hover color ): It is showing some issues. make the background color buttons - shop now, buy now buttons as red. on hovering the button adust the opacit of the background color.  in add to card button - on hovering make the background image as primary red color. make this changes on index.html
+
+prompt 7 : add class "bg-red-500" to buy now button and shop now button
+
+prompt 8 : need to create a product page html. need to add a swiper contains the images of the product on left , on the right side add product title, info , star rating, add a size selection radio button  as the size items arrange as circles need to contain text "sm","lg", etc and arrange it horizontally, on clicking it need to be highlightedby adding a thirck border with primary color. below that add price , buy now, add to cart buttons. on the next section add a title "Related Items" , below that arrange product cards as in index.html. add a footer below that same as in index.html, use the color theme and design system same as the landing page index.html. 
+
+add a cart page html. need to contain a heading "Your Cart". Below that arrange Items in the cart vertically on left. Cart item card need to contain the image aligned on left with width about 30 %, on the right side add title , size, and short info and add a checbox at rop right to select and unselect item. on the right side of cart items section show price and total , below that add proceed to checkout button. Below that add  on the next section add a title "Related Items" , below that arrange product cards as in index.html. add a footer below that same as in index.html, use the color theme and design system same as the landing page index.html.
+
+
+add checkout page html. Need to add section for selecting the delivery address on left. on the right side show price totaling and place order button. below that add section for selecting the payment method. below that add place order button again. add a footer below that same as in index.html, use the color theme and design system same as the landing page index.html.
+
+
+prompt x:
+
+on checkout, on clicking address card need to get it selected. payment method also need to be selected on clicking the item card. on selecting item the selection indication circle need to set border color as off white
+
+Prompt x : on index.html on clicking the product image and product title need to redirect to product page. also on all htmls , add cart link on navbar
+
+2. Daily Crosswords
+
+ - header showing the name of app Daily Crosswords, on the right of header need to show your score, avatar image
+ - show cross word card at bottom. each card needs contain crossword image difficulty level, no of words
+- on clicking card need to redirect to crossword page
+- cross word filling option on it
+- submit button
+- show time taken. show timer
